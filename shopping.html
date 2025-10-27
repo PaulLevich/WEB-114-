@@ -1,0 +1,46 @@
+<!DOCTYPE HTML> 
+
+<!-- Paul Levich 10/23/25--> 
+
+<html lang="en"> 
+    <head> 
+        <title> My JS template page </title>
+        <meta charset= "utf-8">
+    </head>
+    <body>
+   <h1> Paul Levich </h1>
+   <h1></h1>
+
+   <h1>Questions</h1>
+   <h3></h3>
+   <h3> 1. Name a situation where you would need to create an "if" statement </h3>
+   <h3> 2. When comparing values,  in what data type is the result stored? </h3>
+   <h3></h3>
+   <h1>Answers</h1>
+   <h3></h3>
+   <h3>1. You need to use a "if" statement if you want to be able to differentiate the answers and output a different answer depending on what the user imputs. An example is when building a vending machine you use a "if" statement to decide if the user needs to insert more money or calculate how much change the user is given or if he has entered enough money.</h3>
+   <h3>2. The data type will always return with a Boolean "true or false"</h3>
+
+   <script>
+    let total = prompt("How much did you spend.")
+    let confirmed = confirm("$" + total + "? Click OK to continue")
+
+    if (total >= 100)
+   {
+    alert("20% off")
+   }
+   else if (total >= 50)
+   {
+    alert("10% off")
+   }
+   else
+   {
+    alert("No discount.")
+   }
+
+
+   </script>
+    </body>
+
+    
+</html>
