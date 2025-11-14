@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<!-- Paul Levich 10/23/25-->
+
+<html lang="en">
+
+<head>
+    <title> Calculate Average Weekly Gas </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <h1>What is the purpose of a function? </h1>
+    <h3>Functions are the building blocks of the program. They allow code to be stored and called as many times as
+        needed without rewriting the code.</h3>
+    <h3>Click F12 to see the console message.</h3>
+
+    <script>
+        let entryCount = 0;
+        let total = 0;
+        let weeklyGas = 0;
+
+        let username = prompt("What is your name? ");
+        weeklyGas = parseFloat(prompt("Enter your first weeks's gas total. Enter -1 when you are done."));
+
+        function calGasAvg() 
+        {
+            while (weeklyGas != -1) 
+            {
+                total = weeklyGas;
+                ++entryCount;
+                weeklyGas = parseFloat(prompt("Enter your next week's gas total. Enter -1 when you are done."));
+            }
+            if (entryCount > 0) 
+            {
+                return averageGas = total / entryCount;
+            }
+            else 
+            {
+                return averageGas = 0;
+            }
+        }
+        
+        gas = calGasAvg();
+        confirm(username + "'s average weekly gas bill is " + gas.toFixed(2));
+
+        if (entryCount === 0) 
+        {
+            confirm("No gas totals were entered.");
+        } 
+        else if (entryCount === 1) 
+        {
+            confirm(`You entered ${entryCount} gas total.`);
+        } 
+        else 
+        {
+            confirm(`You entered ${entryCount} gas totals.`);
+        }
+    </script>
+</body>
+
+
+</html>
